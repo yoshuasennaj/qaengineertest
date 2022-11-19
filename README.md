@@ -76,5 +76,5 @@ cucumber -f pretty --expand -f json -o report.json
 https://user-images.githubusercontent.com/111522273/202855609-fbfaf1ed-c080-4af4-a8cd-a195bc7946c2.mp4
 
 ### Lesson Learned 
-I use the Ruby environment because it's easier to learn than Java. In the process of working I found a stoppers. For example the automation unable to locate element, I have tried several locators but the selenium still unable to locate it. 
+I use the Ruby environment because it's easier to learn than Java. In the process of working I found a stoppers. For example the automation unable to locate element, I have tried several locators but the selenium still unable to locate it. So, I can't do it through all the end-to-end tests.
 

@@ -5,13 +5,12 @@ What you need
 -------------
 
 Please make sure you have all of this before took run!
-* Ruby latest 3.1.2 latest & 64-bit version (https://www.ruby-lang.org/en/downloads/)
-* Text Editor (https://atom.io/). I using atom for this case
-* Google chrome
-* Selenium-web driver
+* ruby latest 3.1.2 latest & 64-bit version (https://www.ruby-lang.org/en/downloads/)
+* text editor (https://atom.io/). I using atom for this case
+* google chrome
+* selenium-web driver
 * cucumber
 * chromedriver (https://chromedriver.chromium.org/)
-* allure-cucumber
 
 Installation
 -------------
@@ -74,6 +73,7 @@ cucumber -f pretty --expand -f json -o report.json
 
 
 ### Recording Automation Reproduce
+https://user-images.githubusercontent.com/111522273/202855609-fbfaf1ed-c080-4af4-a8cd-a195bc7946c2.mp4
 
 ### Lesson Learned 
 I use the Ruby environment because it's easier to learn than Java. In the process of working I found a stoppers. For example the automation unable to locate element, I have tried several locators but the selenium still unable to locate it. 

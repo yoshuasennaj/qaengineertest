@@ -1,4 +1,4 @@
-# MamikoS BDD Automation Selenium
+# Mamikos BDD Automation Selenium with POM
 
 ----------
 What you need

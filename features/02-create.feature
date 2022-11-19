@@ -11,11 +11,11 @@ Feature: Create Kost
         Then user click pilih kos
         Then user click buat kos
         And user input nama kos
-        Then user choose jenis kelamin
-        Then user input deskripsi kos
-        Then user input tahun kos
-        Then user click lanjutkan button
-        And user input lokasi
-        Then user choose kabupaten or kota
-        Then user choose kecamatan
-        Then user click lanjutkan button
+        # Then user choose jenis kelamin
+        # Then user input deskripsi kos
+        # Then user input tahun kos
+        # Then user click lanjutkan button
+        # And user input lokasi
+        # Then user choose kabupaten or kota
+        # Then user choose kecamatan
+        # Then user click lanjutkan button

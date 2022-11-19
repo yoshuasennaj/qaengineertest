@@ -1,7 +1,7 @@
 require_relative '../support/screen_action.rb'
-require 'selenium-webdriver'
-require 'rspec'
-include RSpec::Matchers
+# require 'selenium-webdriver'
+# require 'rspec'
+# include RSpec::Matchers
 
 Given('user launch website') do
     maximize_browser()
@@ -41,7 +41,7 @@ end
 
 Then('user click login button') do
   click_login_field()
-  sleep(15)
+  sleep(20)
 end
 
 Then('user click cari kos') do
@@ -67,34 +67,34 @@ Then('user click 10th kost on the list') do
   sleep(20)
 end
 
-# And('user will verify text kost') do
-#   verify_text_kost().displayed?
-#   sleep(5)
-# end
-#
-# Then('user click simpan button to favorite') do
-#   click_simpan_btn()
-#   sleep(10)
-# end
-# #
-# # Then('user click hapus button to unfavorite') do
-# #   click_hapus_btn()
-# #   sleep(15)
-# # end
-# #
-# When('user click favorite menu') do
-#   open_url("https://mamikos.com/history/favourite?nav-source=wishlist%20favorit")
-#   sleep(10)
-# end
-# #
-# Then('user verify there is no previous kost favorite') do
-#   verify_text_favorite()
-#   sleep(10)
-# end
+And('user will verify text kost') do
+  verify_text_kost()
+  sleep(5)
+end
+
+Then('user click simpan button to favorite') do
+  click_simpan_btn().scrollTo
+  sleep(10)
+end
+
+Then('user click hapus button to unfavorite') do
+  click_hapus_btn()
+  sleep(15)
+end
+
+When('user click favorite menu') do
+  open_url("https://mamikos.com/history/favourite?nav-source=wishlist%20favorit")
+  sleep(10)
+end
+
+Then('user verify there is no previous kost favorite') do
+  verify_text_favorite()
+  sleep(10)
+end
 
 And('user click tambah properti') do
   click_tambahproperti_btn()
-  sleep(10)
+  sleep(15)
 end
 
 Then('user click pilih kos') do

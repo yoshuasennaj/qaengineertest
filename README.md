@@ -72,7 +72,7 @@ cucumber -f pretty --expand -f json -o report.json
 ```
 
 
-### Recording Automation Reproduce
+### Recording Automation
 https://user-images.githubusercontent.com/111522273/202855609-fbfaf1ed-c080-4af4-a8cd-a195bc7946c2.mp4
 
 ### Lesson Learned 

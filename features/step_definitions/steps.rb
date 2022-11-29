@@ -6,7 +6,7 @@ require_relative '../support/screen_action.rb'
 Given('user launch website') do
     maximize_browser()
     open_url("https://mamikos.com/")
-    sleep(2)
+    
 end
 
 When('website displayed user click masuk button') do
@@ -41,7 +41,7 @@ end
 
 Then('user click login button') do
   click_login_field()
-  sleep(20)
+  sleep(15)
 end
 
 Then('user click cari kos') do
@@ -62,9 +62,7 @@ end
 
 Then('user click 10th kost on the list') do
   click_10th_kost_field()
-  # click_10th_kost_field().location_once_scrolled_into_view
-  # click_10th_kost_field().click
-  sleep(20)
+  sleep(10)
 end
 
 And('user will verify text kost') do
@@ -73,7 +71,13 @@ And('user will verify text kost') do
 end
 
 Then('user click simpan button to favorite') do
-  click_simpan_btn().scrollTo
+  driver.get " https://mamikos.com/room/kost-kabupaten-halmahera-utara-kost-putra-eksklusif-kos-upik-435-mamitest-tipe-b-tobelo-halmahera-utara-1?redirection_source=list%20kos%20result"
+  scroll_origin = Selenium::WebDriver::WheelActions::ScrollOrigin.viewport(10, 10)
+      driver.action
+            .scroll_from(scroll_origin, 0, 600)
+            .perform
+  sleep(10)
+  click_simpan_btn()
   sleep(10)
 end
 

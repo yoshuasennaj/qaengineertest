@@ -11,7 +11,8 @@ Feature: Favorite Kost
         And user input Tobelo
         Then user click Tobelo
         Then user click 10th kost on the list
-        # And user will verify text kost
-        # Then user click simpan button to favorite
+        And user will verify text kost
+        Then user click simpan button to favorite
+        Then user click hapus button to unfavorite
         When user click favorite menu
         Then user verify there is no previous kost favorite

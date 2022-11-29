@@ -1,9 +1,10 @@
 def click_simpan_btn()
-    $browser.find_element(:xpath, '/html/body/div[4]/div/section/section/div[2]/div[1]/section[1]/section[2]/div[2]/div[1]/button',"select").click
+  $browser.element = wait.until { driver.find_element(:xpath , '//*[@id="detailKostOverviewFavShare"]/div[1]/button') }
+  $browser.element.click
 end
 
 def click_hapus_btn()
-  $browser.find_element(:xpath, '/html/body/div[4]/div/section/section/div[2]/div[1]/section[1]/section[2]/div[2]/div[1]/button',"select").click
+  $browser.find_element(:xpath, '').click
 end
 
 def click_favorite_menu()
